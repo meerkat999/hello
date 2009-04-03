@@ -1,0 +1,25 @@
+h1. Hello
+
+Hello is a yaml file of the word "hello" in many languages and dialects.
+
+There is also a Ruby interface to it so you can show Flickr-style flash messages after your users sign in to your web application:
+
+    Hello.random
+
+By default, the word you get is time-neutral and religious-neutral. It is intended to be directed at one person of any gender or any age. The "hello" may be formal or informal.
+
+Expand the list of "hello"s by gender:
+
+    Hello.random(:gender => :male)
+    Hello.random(:gender => :female)
+
+Expand the list of "hello"s by time of day:
+
+    Hello.random(:time => :morning)
+    Hello.random(:time => :afternoon)
+    Hello.random(:time => :evening)
+
+Adjustments to the list are... welcome.
+
+@Croaky
+
