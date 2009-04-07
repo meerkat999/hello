@@ -1,8 +1,8 @@
 h1. Hello
 
-Hello is a yaml file of the word "hello" in many languages and dialects.
+Hello is a Ruby interface to a collection of the word "hello" in many languages and dialects.
 
-There is also a Ruby interface to it so you can show Flickr-style flash messages after your users sign in to your web application:
+It was written so you can show Flickr-style messages to your users after they sign in to your web application:
 
     Hello.random
 
