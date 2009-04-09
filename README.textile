@@ -2,7 +2,7 @@ h1. Hello
 
 Hello is a Ruby interface to a collection of the word "hello" in many languages and dialects.
 
-It was written so you can show Flickr-style messages to your users after they sign in to your web application:
+I wrote it for Flickr-style messages after users sign in to a web application:
 
 <pre><code>>> Hello.random
 => "Wushiwushi"</code></pre>
@@ -22,7 +22,7 @@ Hello.random(:time => :evening)</code></pre>
 
 Or combine them:
 
-<code>Hello.random(:time => :morning, :gender => :female)</code>
+<pre><code>Hello.random(:time => :morning, :gender => :female)</code></pre>
 
 Adjustments to the list are... welcome.
 
