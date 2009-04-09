@@ -4,25 +4,25 @@ Hello is a Ruby interface to a collection of the word "hello" in many languages 
 
 It was written so you can show Flickr-style messages to your users after they sign in to your web application:
 
-    >> Hello.random
-    => "Wushiwushi"
+<pre><code>>> Hello.random
+=> "Wushiwushi"</code></pre>
 
 By default, the word you get is time-neutral and religious-neutral. It is intended to be directed at one person of any gender or any age. The "hello" may be formal or informal.
 
 Expand the list of "hello"s by gender:
 
-    Hello.random(:gender => :male)
-    Hello.random(:gender => :female)
+<pre><code>Hello.random(:gender => :male)
+Hello.random(:gender => :female)</code></pre>
 
 Expand the list of "hello"s by time of day:
 
-    Hello.random(:time => :morning)
-    Hello.random(:time => :afternoon)
-    Hello.random(:time => :evening)
+<pre><code>Hello.random(:time => :morning)
+Hello.random(:time => :afternoon)
+Hello.random(:time => :evening)</code></pre>
 
 Or combine them:
 
-    Hello.random(:time => :morning, :gender => :female)
+<code>Hello.random(:time => :morning, :gender => :female)</code>
 
 Adjustments to the list are... welcome.
 
