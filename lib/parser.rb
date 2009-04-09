@@ -1,5 +1,5 @@
 module Hello
-  KINDS = %w(male female morning afternoon evening agnostic)
+  KINDS = %w(male female morning afternoon evening inoffensive)
 end
 
 module Parser
@@ -40,7 +40,7 @@ class Line
     end
   end
 
-  def agnostic?
+  def inoffensive?
     Hello::KINDS.all? { |kind| ! about.include?(kind) }
   end
 end

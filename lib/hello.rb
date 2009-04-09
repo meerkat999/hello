@@ -3,7 +3,7 @@ class Hello
 
   def self.random(opts = {})
     invalid_option_feedback unless valid_options?(opts)
-    hellos = collect_hellos("agnostic")
+    hellos = collect_hellos("inoffensive")
     hellos |= collect_hellos("male")      if male?(opts)
     hellos |= collect_hellos("female")    if female?(opts)
     hellos |= collect_hellos("morning")   if morning?(opts)

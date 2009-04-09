@@ -7,8 +7,8 @@ describe "random" do
     @hello.should_not be_blank
   end
 
-  it "should be a hello from agnostic" do
-    File.hello_data("agnostic").include? @hello
+  it "should be a hello from inoffensive" do
+    File.hello_data("inoffensive").include? @hello
   end
 
   %w(male female morning afternoon evening).each do |kind|
@@ -25,8 +25,8 @@ describe "random with male gender" do
     @hello.should_not be_blank
   end
 
-  it "should be a hello from male or agnostic" do
-    hellos = File.hello_data("male") & File.hello_data("agnostic")
+  it "should be a hello from male or inoffensive" do
+    hellos = File.hello_data("male") & File.hello_data("inoffensive")
     hellos.include? @hello
   end
 
@@ -44,8 +44,8 @@ describe "random with female gender" do
     @hello.should_not be_blank
   end
 
-  it "should be a hello from female or agnostic" do
-    hellos = File.hello_data("female") & File.hello_data("agnostic")
+  it "should be a hello from female or inoffensive" do
+    hellos = File.hello_data("female") & File.hello_data("inoffensive")
     hellos.include? @hello
   end
 
@@ -63,8 +63,8 @@ describe "random with morning time" do
     @hello.should_not be_blank
   end
 
-  it "should be a hello from morning or agnostic" do
-    hellos = File.hello_data("morning") & File.hello_data("agnostic")
+  it "should be a hello from morning or inoffensive" do
+    hellos = File.hello_data("morning") & File.hello_data("inoffensive")
     hellos.include? @hello
   end
 
@@ -82,8 +82,8 @@ describe "random with afternoon time" do
     @hello.should_not be_blank
   end
 
-  it "should be a hello from afternoon or agnostic" do
-    hellos = File.hello_data("afternoon") & File.hello_data("agnostic")
+  it "should be a hello from afternoon or inoffensive" do
+    hellos = File.hello_data("afternoon") & File.hello_data("inoffensive")
     hellos.include? @hello
   end
 
@@ -101,8 +101,8 @@ describe "random with evening time" do
     @hello.should_not be_blank
   end
 
-  it "should be a hello from evening or agnostic" do
-    hellos = File.hello_data("evening") & File.hello_data("agnostic")
+  it "should be a hello from evening or inoffensive" do
+    hellos = File.hello_data("evening") & File.hello_data("inoffensive")
     hellos.include? @hello
   end
 
