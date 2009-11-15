@@ -27,7 +27,7 @@ files:
 - lib/hello.rb
 - lib/parser.rb
 - data/afternoon
-- data/agnostic
+- data/inoffensive
 - data/all
 - data/evening
 - data/female
